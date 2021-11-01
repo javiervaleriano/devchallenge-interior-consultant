@@ -1,4 +1,4 @@
-<h1 align="center">Interior consultant | Consultora de interiores</h1>
+<h1 align="center">Interior Consultant | Consultora de Interiores</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>. | Solución para un desafío de <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
