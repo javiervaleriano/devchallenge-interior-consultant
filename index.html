@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Consultant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <!-- Material icons | Íconos Material -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Styles | Estilos -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- JavaScript -->
+    <script src="./alive.js" type="text/javascript" charset="utf-8" defer></script>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./devchallenges.png" type="image/x-icon" />
+    <!-- Google Fonts | Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">This interior</h1>
+
+        <span class="material-icons header__icon icon-bars">
+            menu
+        </span>
+
+        <nav class="header__nav">
+            <span class="material-icons nav__icon">
+                close
+            </span>
+            <ul class="nav__list">
+                <li class="list__item list__item--active">
+                    <a class="list__item__link list__item__link--active">Inicio</a>
+                </li>
+                <li class="list__item">
+                    <a class="list__item__link">Colección</a>
+                </li>
+                <li class="list__item">
+                    <a class="list__item__link">Acerca de</a>
+                </li>
+                <li class="list__item">
+                    <a class="list__item__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__container__text">
+            <h2 class="main__h2">Interior moderno</h2>
+            <p class="main__p">Una empresa de diseño y puesta en escena residencial y comercial de servicio completo que ofrece organización profesional y servicios ecológicos.</p>
+            <button class="main__btn" type="button">Leer más <span class="main__btn__icon material-icons">trending_flat</span></button>
+        </div>
+        <div class="main__container__images">
+            <img class="main__interior__image" src="./photo1.png" alt="Design of an interior space | Diseño de un espacio interior" />
+            <div class="main__card">
+                <img class="aliza__image" src="./photo2.png" alt="Aliza Webber smiling | Aliza Webber sonriendo" />
+                <div class="card__info">
+                    <p class="info__name">Aliza Webber</p>
+                    <p class="info__desc">Diseñadora de interiores</p>
+                </div>
+                <p class="card__credits">Diseñado en <span id="year-js"></span> por</br>Aliza Webber</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__info">Creado por <a class="footer__info__link" target="blank">Javier Valeriano</a></p>
+    </footer>
+</body>
+</html>

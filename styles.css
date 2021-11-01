@@ -1,0 +1,573 @@
+:root {
+    --background: #181719;
+    --header-icon-color: #F2F2F2;
+    --principal-font-color: #FFFFFF;
+    --gray: #828282;
+    --footer-gray: #A9A9A9;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: var(--background);
+
+    padding: 1em .75em;
+}
+
+.header .material-icons {
+    cursor: pointer;
+}
+
+.header__h1 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 0;
+    outline: 1px solid var(--principal-font-color);
+    padding: .45em .75em;
+    color: var(--principal-font-color);
+    font-weight: lighter;
+}
+
+.header__icon {
+    font-size: 2em;
+    color: var(--header-icon-color);
+}
+
+.header__nav {
+    position: fixed;
+    z-index: 5000;
+    height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: var(--principal-font-color);
+    background-color: var(--background);
+    text-align: right;
+    
+    transition: all .9s;
+}
+
+.header__nav--showed { height: 100%; }
+
+.nav__list {
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__icon {
+    position: absolute;
+    top: .4em;
+    right: .3em;
+    font-size: 2.5em;
+    color: var(--header-icon-color);
+}
+
+.list__item {
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0 0 1.6em;
+}
+
+.list__item__link {
+    cursor: pointer;
+    transition: all .3s;
+    padding-bottom: .4em;
+    position: relative;
+}
+
+.list__item__link:hover {
+    color: var(--gray);
+}
+
+.list__item__link:before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: all .3s;
+}
+
+.list__item__link:hover:before {
+    width: 100%;
+    left: 0;
+    background-color: var(--gray);
+}
+
+.list__item__link--active {
+    font-weight: bold;
+}
+
+.list__item__link--active:before {
+    width: 100%;
+    left: 0;
+    background-color: var(--principal-font-color);
+}
+
+.list__item__link--active:hover {
+    color: var(--principal-font-color);
+}
+
+.list__item__link--active:hover:before {
+    background-color: var(--principal-font-color);
+}
+
+
+.main__container__text {
+    margin-bottom: 2.7em;
+}
+
+.main {
+    padding: 1em .6em 0;
+    margin-bottom: 8.75em;
+}
+
+.main__h2 {
+    font-family: 'Lora', serif;
+    color: var(--principal-font-color);
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.25em;
+    padding: .2em 0 .3em;
+}
+
+.main__p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .95em;
+    max-width: 225px;
+    color: var(--principal-font-color);
+    margin-top: 1.05em;
+}
+
+.main__btn {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: .95em;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--principal-font-color);
+    cursor: pointer;
+    
+    transition: all .25s;
+}
+
+.main__btn__icon {
+    margin-left: .4em;
+    
+    transition: all .6s;
+}
+
+.main__btn:hover {
+    text-shadow: 0 0 2px #fff;
+}
+
+.main__btn:hover .main__btn__icon {
+    margin-left: .8em;
+}
+
+.main__btn:active {
+    color: var(--gray);
+}
+
+
+.main__container__images {
+    position: relative;
+    text-align: center;
+    
+    animation: entradaImagen 3s;
+    animation-fill-mode: forwards;
+}
+
+.main__interior__image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 2px;
+}
+
+.main__card {
+    text-align: initial;
+    background-color: var(--background);
+    color: var(--principal-font-color);
+    padding: .6em 1.35em 1.25em;
+    width: 85%;
+    max-width: 325px;
+    position: absolute;
+    right: 3%;
+    bottom: -30%;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    grid-row-gap: .75em;
+    grid-column-gap: 1em;
+    align-items: center;
+
+    box-shadow: 1px 3px 8px 0px #000;
+}
+
+.aliza__image {
+    border-radius: 50%;
+    max-width: 40px;
+    justify-self: flex-start;
+}
+
+.info__name {
+    margin: 0 0 .3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .8em;
+}
+
+.info__desc {
+    color: var(--gray);
+    font-size: .75em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card__credits {
+    grid-column: 1 / span 2;
+    justify-self: flex-start;
+
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+.footer {
+    text-align: center;
+    color: var(--footer-gray);
+}
+
+.footer__info {
+    margin: 0 0 .8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .87em;
+}
+
+.footer__info__link {
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+@keyframes entradaImagen {
+    0% { opacity: 0; }
+    
+    100% { opacity: 1; }
+}
+
+
+/* MEDIA QUERIES */
+/* Mobile | Móvil */
+@media only screen and (max-width: 310px) {
+    .main__card {
+        padding-right: .25em;
+    }
+}
+
+@media only screen and (min-width: 374px) {
+        .main__card {
+            bottom: -27%;
+        }
+        
+        @media only screen and (min-width: 410px) {
+        .main__card {
+            bottom: -23%;
+        }
+        
+        /* Condition according to the height for the footer |
+         Condición según el alto para el footer */
+        @media only screen and (min-height: 800px) {
+            body, html {
+                position: relative;
+                height: 100vh;
+            }
+            
+            .footer {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                z-index: 100;
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 479px) {
+        .main__p {
+            max-width: 50%;
+        }
+        
+        .main__card {
+            bottom: -18.5%;
+        }
+    }
+    
+@media only screen and (min-width: 600px) {
+        .main__card {
+            bottom: -15%;
+            right: 13%;
+        }
+        
+        .info__name {
+            font-size: .86em;
+        }
+        
+        .info__desc {
+            font-size: .8em;
+        }
+        
+        /* Condition according to the height for the footer |
+         Condición según el alto para el footer */
+        @media only screen and (min-height: 900px) {
+            body, html {
+                position: relative;
+                height: 100vh;
+            }
+            
+            .main__card {
+                right: 5%;
+            }
+            
+            .footer {
+                position: absolute;
+                bottom: 0;
+                z-index: 100;
+            }
+        }
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 700px) {
+    .header {
+        padding: 1.3em .75em 1em;
+    }
+    
+    .header__h1 {
+        font-size: 1.1em;
+    }
+    
+    .header__nav {
+        position: relative;
+        height: auto;
+        width: 60%;
+        max-width: 500px;
+        background: transparent;
+        align-self: flex-end;
+    }
+    
+    .header__icon, .nav__icon {
+        display: none;
+    }
+    
+    .nav__list {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .list__item {
+        margin-bottom: .4em;
+    }
+    
+    
+    .main {
+        padding: 1em .8em 0;
+    }
+    
+    .main__p {
+        max-width: 55%;
+        font-size: 1em;
+    }
+    
+    .main__btn {
+        font-size: 1em;
+    }
+    
+    
+    .aliza__image {
+        max-width: 50px;
+    }
+    
+    .info__name {
+        font-size: .95em;
+    }
+    
+    .card__credits {
+        font-size: 1.14em;
+    }
+    
+    @media only screen and (min-width: 768px) and (min-height: 1023px) {
+        body {
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: auto 1fr 7%;
+            align-items: center;
+        }
+    }
+    
+    @media only screen and (min-width: 800px) {
+        .main__card {
+            right: 16%;
+        }
+    }
+    
+    @media only screen and (min-width: 900px) {
+        .main__card {
+            right: 20%;
+        }
+    }
+    
+    /* iPad */
+    @media only screen and (height: 1024px) {
+        .main__card {
+            right: 12%;
+        }
+    }
+}
+
+/* Desktops | Escritorio */
+@media only screen and (min-width: 990px) {
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr 7%;
+    }
+    
+    .header {
+        padding-top: 1.8em;
+    }
+    
+    .header__h1 {
+        margin-left: 3em;
+    }
+    
+    .list__item {
+        font-size: 1.05em;
+    }
+    
+    .main {
+        display: grid;
+        grid-template-columns: 42% 58%;
+        align-items: center;
+        margin: 0;
+        padding: 0 2em 3em;
+    }
+    
+    .main__h2 {
+        font-size: 2.35em;
+    }
+    
+    .main__p {
+        max-width: 350px;
+        margin: .8em 0 2em;
+        line-height: 1.45em;
+    }
+    
+    .main__interior__image {
+        max-width: 650px;
+    }
+    
+    .main__card {
+        bottom: -83px;
+        right: 25px;
+        padding-top: .9em;
+        grid-row-gap: 1.42em;
+        width: 50%;
+        max-width: 400px;
+    }
+    
+    .aliza__image {
+        max-width: 42px;
+    }
+    
+    .footer {
+        position: relative;
+        margin-top: 1.1em;
+    }
+    
+    
+    @media only screen and (min-width: 1100px) {
+        .header {
+            padding-right: 1.8em;
+        }
+        
+        .main__h2 {
+            font-size: 2.5em;
+        }
+        
+        .main__p {
+            font-size: 1.11em;
+            margin-top: .95em;
+        }
+        
+        .main__card {
+            bottom: -80px;
+        }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        .main__card {
+            right: 55px;
+        }
+    }
+    
+    @media only screen and (min-width: 1300px) {
+        .main__card {
+            right: 60px;
+        }
+        
+        .main__interior__image {
+            max-width: 90%;
+        }
+    }
+    
+    @media only screen and (min-width: 1300px) {
+        .main {
+            padding: 0 5em 3em;
+        }
+    }
+    
+    
+    
+    @media only screen and (min-height: 800px) {
+        .footer {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
