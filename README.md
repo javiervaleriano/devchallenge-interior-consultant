@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-solution-URL}">
+    <a href="https://devchallenges.io/solutions/6xayPLUHfIKmM6lHLAmQ">
       Solution / Solución
     </a>
     <span> | </span>
@@ -41,8 +41,8 @@
 <img src="./ss_mobile.png" alt="mobile view | vista móvil" width="300" height="auto" />
 <img src="./ss_mobile-navbar.png" alt="navbar mobile view | vista móvil de la barra de navegación" width="300" height="auto" />
 
-Hello everyone, I hope you are well. This is my [solution]() to [challenge](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) from Devchallenges.io. |
-Hola a todos, espero que estén bien. Esta es mi [solución]() al [desafío](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) de Devchallenges.io
+Hello everyone, I hope you are well. This is my [solution](https://devchallenges.io/solutions/6xayPLUHfIKmM6lHLAmQ) to [challenge](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) from Devchallenges.io. |
+Hola a todos, espero que estén bien. Esta es mi [solución](https://devchallenges.io/solutions/6xayPLUHfIKmM6lHLAmQ) al [desafío](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) de Devchallenges.io
 
 Here you can see my [demo](https://javiervaleriano.github.io/devchallenge-interior-consultant/). | Aquí pueden ver mi [demo](https://javiervaleriano.github.io/devchallenge-interior-consultant/).
 
