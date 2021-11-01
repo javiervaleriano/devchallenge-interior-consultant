@@ -65,8 +65,8 @@ En esta ocasión aprovecho el proyecto para implementar una transición CSS para
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) was to build an application to complete the given user stories | Esta aplicación/sitio se creó como una entrega a un desafío de [Devchallenges](https://devchallenges.io/challenges). El [desafío](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) fue crear una aplicación para completar las historias de usuario dadas:
 
 - User story: I can see a page following the given design. | Historia de usuario: Puedo ver una página siguiendo el diseño dado.
-- User story: On mobile, I can see a collapsed navigation | En móvil, puedo ver una navegación contraída
-- User story: On mobile, when I select the hamburger menu, I can see a navigation | En móvil, cuando selecciono el menú de hamburguesa, puedo ver una navegación
+- User story: On mobile, I can see a collapsed navigation | Historia de usuario: En móvil, puedo ver una navegación contraída
+- User story: On mobile, when I select the hamburger menu, I can see a navigation | Historia de usuario: En móvil, cuando selecciono el menú de hamburguesa, puedo ver una navegación
 
 
 ## Acknowledgements | Agradecimientos
