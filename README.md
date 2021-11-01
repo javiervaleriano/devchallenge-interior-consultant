@@ -35,7 +35,7 @@
 ## Overview | Visión general
 
 ### Desktop | Escritorio
-![Desktop screenshot | Screenshot de escritorio](./ss_desktops.png)
+![Desktop view | Vista de escritorio](./ss_desktops.png)
 
 ### Mobile | Móvil
 <img src="./ss_mobile.png" alt="mobile view | vista móvil" width="300" height="auto" />
